@@ -6,6 +6,25 @@
     <title>Unity Web Player | MazeBuilderNew</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      #unity-mobile-fullscreen-button {
+        display: none;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 10;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.45) url('TemplateData/fullscreen-button.png') no-repeat center;
+        background-size: 28px 28px;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .unity-mobile #unity-mobile-fullscreen-button { display: block }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
